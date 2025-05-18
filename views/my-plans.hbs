@@ -1,0 +1,19 @@
+
+  <main>
+    <section class="plans">
+      <h1>{{h1}}</h1>
+      <div class="plan-list" id="planList">
+        {{#each plans}}
+        <div class="plan-card">
+        <img src="{{image}}" alt="{{name}}" onerror="this.src='/images/placeholder.png'">
+            <h3>{{name}}</h3>
+            <p>{{address}}</p>
+            <button class="btn-remove" id="{{id}}">Видалити</button>
+            <button class="btn-route btn-secondary">Побудувати маршрут</button>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+  </main>
+
+<script src="/js/my-plans.js"></script>

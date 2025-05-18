@@ -1,0 +1,50 @@
+<main>
+  <section class="search">
+    <form id="searchForm">
+      <h1>Пошук подорожі</h1>
+
+      <div class="autocomplete-wrapper">
+        <input type="text" id="location" placeholder="Введіть місто подорожі.." required>
+        <div id="autocomplete-dropdown" class="autocomplete-dropdown"></div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-button  btn-secondary active" data-tab="lodging" data-category="lodging" style="background-color:aliceblue; border: 1px solid; border-color: rgb(233 97 43); color:rgb(233 97 43)">🏨 Готелі</button>
+        <button class="tab-button btn-secondary" data-tab="museum" data-category="museum" style="background-color:aliceblue; border: 2px solid; border-color: #af1fa8; color:#af1fa8">🏛  Музеї</button>
+        <button class="tab-button btn-secondary" data-tab="landmark" data-category="landmark" style="background-color:aliceblue; border: 2px solid; border-color: #1faf1f; color:green">🗽Пам'ятники</button>
+        <button class="tab-button btn-secondary" data-tab="shopping_mall" data-category="shopping_mall" style="background-color:aliceblue; border: 2px solid; border-color: #1f62af; color:#1f62af">🛒 Торгові центри</button>
+        <button class="tab-button btn-secondary" data-tab="night_club" data-category="night_club" style="background-color:aliceblue; border: 1px solid; border-color: rgb(217 64 85); color:rgb(217 64 85)">💃 Клуби</button>
+      </div>
+      <button type="submit" class="btn-primary">Пошук</button>
+    </form>
+
+
+    <div class="results">
+      <div class="tab-content">
+        <div id="lodging" class="tab-panel active">
+          <div class="loading" style="display: none;">Завантаження...</div>
+          <div id="lodging-list" class="cards"></div>
+        </div>
+        <div id="museum" class="tab-panel">
+          <div class="loading" style="display: none;">Завантаження...</div>
+          <div id="museum-list" class="cards"></div>
+        </div>
+        <div id="landmark" class="tab-panel">
+          <div class="loading" style="display: none;">Завантаження...</div>
+          <div id="landmark-list" class="cards"></div>
+        </div>
+        <div id="shopping_mall" class="tab-panel">
+          <div class="loading" style="display: none;">Завантаження...</div>
+          <div id="shopping_mall-list" class="cards"></div>
+        </div>
+        <div id="night_club" class="tab-panel">
+          <div class="loading" style="display: none;">Завантаження...</div>
+          <div id="night_club-list" class="cards"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<script src="/js/home.js"></script>

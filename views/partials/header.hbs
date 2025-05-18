@@ -1,0 +1,13 @@
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Головна</a></li>
+        {{#if isAuth}}  {{!-- перевірка авторизації користувача --}}
+        <li><a href="/my-plans">Мої плани</a></li>
+          <li><a href="/logout">Вихід</a></li>
+        {{else}}
+          <li><a href="/login">Вхід</a></li>
+        {{/if}}
+      </ul>
+    </nav>
+  </header>
